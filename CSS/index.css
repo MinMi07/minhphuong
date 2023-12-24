@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color: #707070;
+    --text-color-hover: rgba(255, 212, 219, 0.9);
+}
+
+::selection {
+    background-color: rgba(255, 212, 219, 0.9);
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    color: var(--text-color);
+    /* text-align: justify; */
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+img, icon{
+    cursor: pointer;
+}
+
+.baground_hide{
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.algin_justify_center {
+    justify-content: center;
+    align-items: center;
+}
+
+.fornt-div div{
+    margin: 10px 0;
+}
+
+.header{
+    height: 40px;
+    position: fixed;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: white;
+    z-index: 9000;
+    inset: 0 0 0 0;
+}
+
+
+.header--left{
+    display: inline-block;
+    line-height: 50px;
+    font-size: 1.3rem;
+}
+
+.header--left img{
+    transform: translateY(15%);
+    margin-right:15px ;
+}
+
+.header--left a{
+    display: block;
+    float: right;
+}
+
+.header div img{
+    height:40px;
+    width: 40px;
+}
+
+.iconMenu{
+ display: none;
+ float: right;
+ color: var(--text-color);
+}
+
+.navigation_top{
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+.navigation_top  li{
+    float: left;
+    list-style-type: none;
+    margin: 0 1.3rem;
+}
+
+.navigation_top li a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.navigation_top li:hover a{
+    color: var(--text-color-hover);
+    display: block;
+    transform: translateY(-2px);
+    transition: color 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.ContenHome{
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns:50% 50%;
+    gap: 20px;
+    height: 500px;
+    font-size: 1.6rem;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.ContenHome_second{
+    margin-top: 87px;
+}
+
+.Img__HomeWord{
+   
+}
+
+.ContenHome .ContenHome--Left{
+    text-transform: uppercase;
+    transform: translate(30%, 25%);
+}
+
+.ContenHome .ContenHome--Left .aboutBtn{
+    border: 1px solid var(--text-color);
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 20px !important;
+    box-shadow: inset 0 0 0 0 rgba(255, 212, 219, 0.9);;
+    transition: 0.5s linear;
+    border-radius: 6px;
+}
+
+.aboutBtn:hover {
+    box-shadow: inset 100px 0 0 0 rgba(255, 212, 219, 0.9) !important;
+}
+
+.ContenHome--Left .Personal3{
+    position: absolute;
+    height: 100%;
+    transform: translate(100px, -250px);
+    border-radius: 20px;
+}
+
+.ContenHome--Left div p{
+    text-transform: none;
+}
+
+.ContenHome .ContenHome--Right{
+    position: relative;
+    display: block;
+}
+
+.ContenHome--Right__ImageBackground{
+    position:absolute;
+    height: 150%;
+    top: 0;
+    left: 0;
+}
+
+.ContenHome--Right__ImageFace {
+    /* display: inline; */
+    position: absolute;
+    z-index: 20;
+    width: 350px;
+    border-radius: 80px;
+    transform: translate(250px, 60px) scale(1.4);
+}
+
+
+.ContenHome--Left .ImageHomeWork{
+    height: 120%;
+    transform: translateX(-166px) translateY(-45%);
+}
+
+.ContenHome--Left .ImageHomeWork1{
+    height: 45%;
+    border-radius: 30px;
+    transform: translateX(-80px) translateY(-60%);
+}
+
+.TalkForSelf--font{
+    display: grid;
+    width: 70%;
+    grid-template-columns: auto auto auto;
+    gap:100px;
+    margin: 10px auto;
+}
+.BoxWWord{
+    padding: 10px 10px;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: justify;
+    z-index: 2;
+    border-radius: 12px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.BoxWWord:hover{
+    box-shadow:  0px 0px 20px grey;
+}
+
+.BoxWWord .icon--font{
+   display: block;
+   justify-content: center;
+   width: 100%;
+   font-size: 40px;
+   color: var(--text-color);
+   margin-bottom: 20px;
+}
+
+#Blog{
+    margin-top: 50px;
+}
+
+.Block__Top{
+    display: grid;
+    grid-template-columns:50% 50%;
+    gap: 50px;
+    width: 69%;
+    margin: 0px auto;
+}
+
+.Block__Top .fornt-div{
+    margin-top: 140px;
+}
+.Block__Top p{
+    font-size: 1.6rem;
+}
+.Block__Top h3{
+    font-size: 4.6rem;
+}
+
+.Blog--Right{
+    position: relative;
+}
+
+.Blog--Right .Blog__imgBackground {
+    width: 110%;
+    position: relative;
+}
+.Blog--Right .Blog__imgPerson {
+     height: 80%;
+     border-radius: 130px;
+}
+
+.Blog--Right .Blog__imgPerson1 {
+    /* height: auto; */
+    height: 900px;
+    border-radius: 130px;
+}
+
+.Block__Bottom {
+    width: 74%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin: 30px auto;
+}
+.Block__Bottom .Block__Bottom__Box {
+    width: 70%;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    padding: 10px 30px;
+    line-height: 30px;
+    margin: 0px auto;
+}
+
+.Block__Bottom .Block__Bottom__Box p
+{
+    margin-top: 10px;
+    line-height: 25px !important;
+}
+
+.Block__Bottom div:hover h4,
+.Block__Bottom div:hover h3,
+.Block__Bottom div:hover p{
+    color: var(--text-color-hover);
+    transition: all 0.3s linear;
+}
+
+.ContenHome_second{
+    width: 80% !important;
+    gap: 100px;
+    margin-top: 100px;
+    margin: 0px auto;
+}
+
+#Story_school img{
+    max-width: 500px;
+    display: inline;
+}
+
+.footer{
+    height: 500px;
+    background-image:url(../IMAGES/WaseImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkFacebook ,
+.linkInstagram {
+    margin-top: 10%;
+    text-decoration: none;
+    transform: translateY(35%);
+}
+
+.linkInstagram {
+    margin-left: 32px;
+}
+
+.footer img{
+    width: 150px;
+    top: 60%;
+    left: 39%;
+    border-radius: 25px;
+}
+
